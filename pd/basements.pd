@@ -40,6 +40,9 @@
 #X text 448 472 feedback;
 #X text 210 219 map y axis of fb to millis;
 #X text 107 139 oscillation of fb rate;
+#X obj 178 615 lop~;
+#X obj 223 612 bob~;
+#X text 154 652 todo: add reverb stage?;
 #X connect 0 0 12 0;
 #X connect 3 0 6 0;
 #X connect 4 0 3 0;
@@ -49,8 +52,8 @@
 #X connect 8 0 21 0;
 #X connect 9 0 10 0;
 #X connect 9 0 8 1;
-#X connect 11 0 1 0;
 #X connect 11 0 8 0;
+#X connect 11 0 1 0;
 #X connect 15 0 11 0;
 #X connect 16 0 21 0;
 #X connect 17 0 18 0;
@@ -69,6 +72,9 @@
 #X obj 304 215 sig~;
 #X obj 370 155 osc~ 0.1;
 #X text 374 133 LFO;
+#X obj 442 512 loadbang;
+#X msg 450 629 0.75;
+#X msg 454 585 50;
 #X connect 1 0 3 0;
 #X connect 1 0 6 0;
 #X connect 3 0 4 0;
@@ -78,3 +84,7 @@
 #X connect 6 0 0 1;
 #X connect 7 0 9 0;
 #X connect 9 0 1 0;
+#X connect 12 0 13 0;
+#X connect 12 0 14 0;
+#X connect 13 0 0 2;
+#X connect 14 0 5 0;
