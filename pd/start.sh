@@ -13,7 +13,7 @@ fi
     -channels 2 \
     -r 48000 \
 	-audiodev ${AUDIODEV} \
-    -audiobuf 10 \
+    -audiobuf 15 \
     -path "${MYDIR}" \
     -send "pd dsp 1" "${MYDIR}/basements.pd"
 
