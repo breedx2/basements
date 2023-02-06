@@ -1,0 +1,8 @@
+fb1 0.874016;
+fb2 0.874016;
+base_freq 49;
+lfo_rate 0.1;
+lfo_amp 6;
+fb_rate 0.1;
+fb_amp 100;
+d2_lag 53;
